@@ -5,25 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>嗨 試看看</title>
     <style>
-        .d1{
-            width: 100px;
-            height: 100px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            margin: auto;  
-            }
-        .p1{
-            width: 15px;
-            height: 15px;
-            border-radius: 50px;
-            background-color: red;
-            margin: auto;
-        }
+        body {
+      text-align: center;
+    }
+
+    .container {
+      width: 1920px;
+      height: 1080px;
+    }
+
+    .dice {
+      width: 100px;
+      height: 100px;
+      background-image: linear-gradient(215deg, #ffffff, #dbd7ca);
+      border: 1px solid #2b2b2b;
+      border-radius: 10%;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      margin: 5px;
+      padding: 20px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .dot {
+      width: 20%;
+      height: 20%;
+      background-color: #3b3838;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .redDot {
+      width: 20%;
+      height: 20%;
+      background-color: #e64e4e;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .leftTop {
+      top: 10%;
+      left: 10%;
+    }
+
+
+    .rightTop {
+      top: 10%;
+      right: 10%;
+    }
+
+    .leftCenter {
+      top: 40%;
+      left: 10%;
+    }
+
+    .rightCenter {
+      right: 10%;
+      top: 40%;
+    }
+
+    .leftBottom {
+      bottom: 10%;
+      left: 10%;
+    }
+
+    .rightBottom {
+      bottom: 10%;
+      right: 10%;
+    }
+
+    .center {
+      left: 40%;
+      top: 40%;
+    }
     </style>
 </head>
 <body>
-    <div class="d1">
-        <div class="p1"></div>
-    </div>
+    <span class="container">
+
+        <div class="dice">
+          <div class="redDot center"></div>
+        </div>
+    
+        <div class="dice">
+          <div class="dot leftTop"></div>
+          <div class="dot rightBottom "></div>
+        </div>
+    
+        <div class="dice">
+          <div class="dot leftTop"></div>
+          <div class="dot center"></div>
+          <div class="dot rightBottom "></div>
+        </div>
+    
+        <div class="dice">
+          <div class="redDot leftTop"></div>
+          <div class="redDot leftBottom "></div>
+          <div class="redDot rightTop"></div>
+          <div class="redDot rightBottom "></div>
+        </div>
+    
+    
+        <div class="dice">
+          <div class="dot leftTop"></div>
+          <div class="dot leftBottom "></div>
+          <div class="dot center"></div>
+          <div class="dot rightTop"></div>
+          <div class="dot rightBottom "></div>
+        </div>
+    
+        <div class="dice">
+          <div class="dot leftTop"></div>
+          <div class="dot leftCenter"></div>
+          <div class="dot leftBottom "></div>
+          <div class="dot rightTop"></div>
+          <div class="dot rightCenter  "></div>
+          <div class="dot rightBottom "></div>
+        </div>
 </body>
 </html>
